@@ -50,7 +50,7 @@ h2 {
 
 .select::after {
     content: "";
-    background: url(img);
+    background: url(.img/arrow-down-outline-svgrepo-com);
     background-size: contain;
     background-repeat: no-repeat;
 

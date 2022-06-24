@@ -48,17 +48,17 @@
  
 // console.log(customSelect);
 
-const select = document.querySelector(".selected");
-const otionsContainer = document.querySelector(".options-container");
+const selected = document.querySelector(".selected");
+const optionsContainer = document.querySelector(".options-container");
 
-const optionsList = document.querySelector(".options");
+const optionsList = document.querySelectorAll(".option");
 
-selected.addEventLitener("click", () => {
+selected.addEventListener("click", () => {
     optionsContainer.classList.toggle("active");
 });
-optionsList.forEach(o => {
-    o.addEventLitener("click", () => {
+optionsList.forEach( o => {
+    o.addEventLsitener("click", () => {
         selected.innerHTML = o.querySelector("label").innerHTML;
         optionsContainer.classList.remove("active");
     });
-})
+});
